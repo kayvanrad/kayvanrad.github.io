@@ -30,6 +30,23 @@
             display: none;
         }
 
+        @media screen and (max-width: 600px) {
+            .nav a:not(:first-child) {display: none;}
+            .nav a.icon {
+                float: right;
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .nav.responsive a:not(:first-child) {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+
         body {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 100%;
@@ -96,35 +113,9 @@
             font-size: 16px;
         }
 
-
-
         .body-text {
             font-size: 125%;
             line-height: 1.25;
-        }
-
-
-
-        @media screen and (max-width: 600px) {
-            .nav a {display: none;}
-            .nav a.icon {
-                float: right;
-                display: block;
-            }
-        }
-
-        @media screen and (max-width: 600px) {
-            .nav.responsive {position: sticky;}
-            .nav.responsive .icon {
-                position: absolute;
-                right: 0;
-                top: 0;
-            }
-            .nav.responsive a {
-                float: none;
-                display: block;
-                text-align: left;
-            }
         }
 
         @media screen and (max-width: 960px) {
@@ -179,21 +170,25 @@
 <body>
     <!-- navigation bar -->
     <ul class="nav" id="topNav">
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>    
+        <a href="#home">Imaginaerum</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </ul>
 
     <div class="background">
-        <div class="clearfix section">
-            <div class="header">
-                <h1>Imaginaerum</h1>
-                <p>If something can be done, you can do it</p>
+        <a id="home">
+            <div class="clearfix section">
+                <div class="header">
+                    <h1>Imaginaerum</h1>
+                    <p>If something can be done, you can do it</p>
+                </div>
             </div>
-        </div>
+        </a>
+        
         <!-- About section -->
         <a id="about">
             <div class="clearfix section">
