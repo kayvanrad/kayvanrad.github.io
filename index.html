@@ -53,6 +53,13 @@
             font-size: 100%;
         }
 
+        img.header {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 75%;
+        }
+
         img.float-right {
             float: right;
             max-width: 50%;
@@ -117,6 +124,11 @@
         .body-text {
             font-size: 125%;
             line-height: 1.25;
+        }
+
+	.image-caption {
+            font-size: 110%;
+            line-height: 1.0;
         }
 
         @media screen and (max-width: 960px) {
@@ -184,7 +196,8 @@
         <a id="home">
             <div class="clearfix section">
                 <div class="header">
-                    <h1>Aras Kayvanrad</h1>
+                    <h1>Aras Kayvanrad, PhD</h1>
+                    <p>Biomedical researcher. Data Scientist.</p>
                 </div>
             </div>
         </a>
@@ -192,16 +205,16 @@
         <!-- About section -->
         <a id="about">
             <div class="clearfix section">
-                <img class="float-left"
-                src="https://docs.google.com/drawings/d/e/2PACX-1vQnrSau_R2lBIVhTiRTqIRNEGmqfnHQrSuy35CtMrZD9ZSvPAuiBN5HA8tx6SpRLsyIFbhhCv2OHL7P/pub?w=488&h=401"
+                <img class="header"
+                src="https://docs.google.com/drawings/d/e/2PACX-1vTLO7xNfRp_6QQKcnBA2pj3tf72cBv0UWwvXEo3KONsTyU9P4YjQ1Ol46w8DrufsAeZpRnGepgtRdcI/pub?w=941&h=773"
                 alt="Aras Kayvanrad">
+		<div class="clearfix centred">
+		    <p class="image-caption">Image: Magnetic resonce angiogram (MRA) of my brain, which I reconstructed by maximum intensity projection of time-of-flight (TOF) images.</p>
+		</div>
                 <div class="clearfix">
-                    <h2>Welcome to my github!</h2>
-                    <p class="body-text">
-                        
-                    </p>
                     <div class="clearfix centred">
                         <a class="button" href="https://scholar.google.ca/citations?user=_vdN_JEAAAAJ&hl=en">My publications</a>
+                        <a class="button" href="https://github.com/kayvanrad">Github</a>
                     </div>
                 </div>
             </div>            
